@@ -1,0 +1,465 @@
+﻿  Server.cpp
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\exceptn.h(79): warning C4275: class "std::exception" ist keine DLL-Schnittstelle und wurde als Basisklasse für die DLL-Schnittstelle class "Botan::Exception" verwendet
+  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\vcruntime_exception.h(44): note: Siehe Deklaration von "std::exception"
+  C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\exceptn.h(78): note: Siehe Deklaration von "Botan::Exception"
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\exceptn.h(113): warning C4251: "Botan::Exception::m_msg": class "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::Exception" verwendet wird
+  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\xstring(4167): note: Siehe Deklaration von "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\asn1_obj.h(134): warning C4251: "Botan::BER_Object::value": class "std::vector<uint8_t,Botan::secure_allocator<uint8_t>>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::BER_Object" verwendet wird
+  C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\secmem.h(65): note: Siehe Deklaration von "std::vector<uint8_t,Botan::secure_allocator<uint8_t>>"
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\asn1_oid.h(85): warning C4251: "Botan::OID::m_id": class "std::vector<uint32_t,std::allocator<_Ty>>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::OID" verwendet wird
+          with
+          [
+              _Ty=uint32_t
+          ]
+  C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\asn1_oid.h(42): note: Siehe Deklaration von "std::vector<uint32_t,std::allocator<_Ty>>"
+          with
+          [
+              _Ty=uint32_t
+          ]
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\alg_id.h(46): warning C4251: "Botan::AlgorithmIdentifier::parameters": class "std::vector<uint8_t,std::allocator<_Ty>>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::AlgorithmIdentifier" verwendet wird
+          with
+          [
+              _Ty=uint8_t
+          ]
+  C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\asn1_obj.h(85): note: Siehe Deklaration von "std::vector<uint8_t,std::allocator<_Ty>>"
+          with
+          [
+              _Ty=uint8_t
+          ]
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\x509_obj.h(139): warning C4251: "Botan::X509_Object::m_tbs_bits": class "std::vector<uint8_t,std::allocator<_Ty>>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::X509_Object" verwendet wird
+          with
+          [
+              _Ty=uint8_t
+          ]
+  C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\asn1_obj.h(85): note: Siehe Deklaration von "std::vector<uint8_t,std::allocator<_Ty>>"
+          with
+          [
+              _Ty=uint8_t
+          ]
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\x509_obj.h(140): warning C4251: "Botan::X509_Object::m_sig": class "std::vector<uint8_t,std::allocator<_Ty>>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::X509_Object" verwendet wird
+          with
+          [
+              _Ty=uint8_t
+          ]
+  C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\asn1_obj.h(85): note: Siehe Deklaration von "std::vector<uint8_t,std::allocator<_Ty>>"
+          with
+          [
+              _Ty=uint8_t
+          ]
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\name_constraint.h(73): warning C4251: "Botan::GeneralName::m_type": class "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::GeneralName" verwendet wird
+  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\xstring(4167): note: Siehe Deklaration von "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\name_constraint.h(74): warning C4251: "Botan::GeneralName::m_name": class "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::GeneralName" verwendet wird
+  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\xstring(4167): note: Siehe Deklaration von "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\name_constraint.h(176): warning C4251: "Botan::NameConstraints::m_permitted_subtrees": class "std::vector<Botan::GeneralSubtree,std::allocator<_Ty>>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::NameConstraints" verwendet wird
+          with
+          [
+              _Ty=Botan::GeneralSubtree
+          ]
+  C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\name_constraint.h(160): note: Siehe Deklaration von "std::vector<Botan::GeneralSubtree,std::allocator<_Ty>>"
+          with
+          [
+              _Ty=Botan::GeneralSubtree
+          ]
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\name_constraint.h(177): warning C4251: "Botan::NameConstraints::m_excluded_subtrees": class "std::vector<Botan::GeneralSubtree,std::allocator<_Ty>>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::NameConstraints" verwendet wird
+          with
+          [
+              _Ty=Botan::GeneralSubtree
+          ]
+  C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\name_constraint.h(160): note: Siehe Deklaration von "std::vector<Botan::GeneralSubtree,std::allocator<_Ty>>"
+          with
+          [
+              _Ty=Botan::GeneralSubtree
+          ]
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\x509cert.h(450): warning C4251: "Botan::X509_Certificate::m_data": class "std::shared_ptr<Botan::X509_Certificate_Data>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::X509_Certificate" verwendet wird
+  C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\x509cert.h(450): note: Siehe Deklaration von "std::shared_ptr<Botan::X509_Certificate_Data>"
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\tls_server_info.h(72): warning C4251: "Botan::TLS::Server_Information::m_hostname": class "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::TLS::Server_Information" verwendet wird
+  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\xstring(4167): note: Siehe Deklaration von "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\tls_server_info.h(72): warning C4251: "Botan::TLS::Server_Information::m_service": class "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::TLS::Server_Information" verwendet wird
+  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\xstring(4167): note: Siehe Deklaration von "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\symkey.h(98): warning C4251: "Botan::OctetString::m_data": class "std::vector<uint8_t,Botan::secure_allocator<uint8_t>>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::OctetString" verwendet wird
+  C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\secmem.h(65): note: Siehe Deklaration von "std::vector<uint8_t,Botan::secure_allocator<uint8_t>>"
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\tls_session.h(188): warning C4251: "Botan::TLS::Session::m_start_time": class "std::chrono::time_point<std::chrono::system_clock,std::chrono::system_clock::duration>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::TLS::Session" verwendet wird
+  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\chrono(551): note: Siehe Deklaration von "std::chrono::time_point<std::chrono::system_clock,std::chrono::system_clock::duration>"
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\tls_session.h(190): warning C4251: "Botan::TLS::Session::m_identifier": class "std::vector<uint8_t,std::allocator<_Ty>>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::TLS::Session" verwendet wird
+          with
+          [
+              _Ty=uint8_t
+          ]
+  C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\asn1_obj.h(85): note: Siehe Deklaration von "std::vector<uint8_t,std::allocator<_Ty>>"
+          with
+          [
+              _Ty=uint8_t
+          ]
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\tls_session.h(191): warning C4251: "Botan::TLS::Session::m_session_ticket": class "std::vector<uint8_t,std::allocator<_Ty>>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::TLS::Session" verwendet wird
+          with
+          [
+              _Ty=uint8_t
+          ]
+  C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\asn1_obj.h(85): note: Siehe Deklaration von "std::vector<uint8_t,std::allocator<_Ty>>"
+          with
+          [
+              _Ty=uint8_t
+          ]
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\tls_session.h(192): warning C4251: "Botan::TLS::Session::m_master_secret": class "std::vector<uint8_t,Botan::secure_allocator<uint8_t>>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::TLS::Session" verwendet wird
+  C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\secmem.h(65): note: Siehe Deklaration von "std::vector<uint8_t,Botan::secure_allocator<uint8_t>>"
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\tls_session.h(201): warning C4251: "Botan::TLS::Session::m_peer_certs": class "std::vector<Botan::X509_Certificate,std::allocator<_Ty>>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::TLS::Session" verwendet wird
+          with
+          [
+              _Ty=Botan::X509_Certificate
+          ]
+  C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\tls_session.h(54): note: Siehe Deklaration von "std::vector<Botan::X509_Certificate,std::allocator<_Ty>>"
+          with
+          [
+              _Ty=Botan::X509_Certificate
+          ]
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\tls_session.h(203): warning C4251: "Botan::TLS::Session::m_srp_identifier": class "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::TLS::Session" verwendet wird
+  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\xstring(4167): note: Siehe Deklaration von "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\tls_session_manager.h(143): warning C4251: "Botan::TLS::Session_Manager_In_Memory::m_mutex": class "std::mutex" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::TLS::Session_Manager_In_Memory" verwendet wird
+  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\mutex(82): note: Siehe Deklaration von "std::mutex"
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\tls_session_manager.h(147): warning C4251: "Botan::TLS::Session_Manager_In_Memory::m_session_lifetime": class "std::chrono::duration<__int64,std::ratio<1,1>>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::TLS::Session_Manager_In_Memory" verwendet wird
+  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\chrono(444): note: Siehe Deklaration von "std::chrono::duration<__int64,std::ratio<1,1>>"
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\tls_session_manager.h(150): warning C4251: "Botan::TLS::Session_Manager_In_Memory::m_session_key": class "std::vector<uint8_t,Botan::secure_allocator<uint8_t>>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::TLS::Session_Manager_In_Memory" verwendet wird
+  C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\secmem.h(65): note: Siehe Deklaration von "std::vector<uint8_t,Botan::secure_allocator<uint8_t>>"
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\tls_session_manager.h(152): warning C4251: "Botan::TLS::Session_Manager_In_Memory::m_sessions": class "std::map<std::string,std::vector<uint8_t,std::allocator<_Ty>>,std::less<_Kty>,std::allocator<std::pair<const _Kty,std::vector<_Ty,std::allocator<_Ty>>>>>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::TLS::Session_Manager_In_Memory" verwendet wird
+          with
+          [
+              _Ty=uint8_t,
+              _Kty=std::string
+          ]
+  C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\tls_session_manager.h(152): note: Siehe Deklaration von "std::map<std::string,std::vector<uint8_t,std::allocator<_Ty>>,std::less<_Kty>,std::allocator<std::pair<const _Kty,std::vector<_Ty,std::allocator<_Ty>>>>>"
+          with
+          [
+              _Ty=uint8_t,
+              _Kty=std::string
+          ]
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\tls_session_manager.h(153): warning C4251: "Botan::TLS::Session_Manager_In_Memory::m_info_sessions": class "std::map<Botan::TLS::Server_Information,std::string,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::TLS::Session_Manager_In_Memory" verwendet wird
+          with
+          [
+              _Kty=Botan::TLS::Server_Information,
+              _Ty=std::string
+          ]
+  C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\tls_session_manager.h(153): note: Siehe Deklaration von "std::map<Botan::TLS::Server_Information,std::string,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>"
+          with
+          [
+              _Kty=Botan::TLS::Server_Information,
+              _Ty=std::string
+          ]
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\rng.h(273): warning C4251: "Botan::Serialized_RNG::m_mutex": class "std::mutex" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::Serialized_RNG" verwendet wird
+  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\mutex(82): note: Siehe Deklaration von "std::mutex"
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\rng.h(274): warning C4251: "Botan::Serialized_RNG::m_rng": class "std::unique_ptr<Botan::RandomNumberGenerator,std::default_delete<_Ty>>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::Serialized_RNG" verwendet wird
+          with
+          [
+              _Ty=Botan::RandomNumberGenerator
+          ]
+  C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\rng.h(274): note: Siehe Deklaration von "std::unique_ptr<Botan::RandomNumberGenerator,std::default_delete<_Ty>>"
+          with
+          [
+              _Ty=Botan::RandomNumberGenerator
+          ]
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\pubkey.h(293): warning C4251: "Botan::PK_Signer::m_op": class "std::unique_ptr<Botan::PK_Ops::Signature,std::default_delete<_Ty>>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::PK_Signer" verwendet wird
+          with
+          [
+              _Ty=Botan::PK_Ops::Signature
+          ]
+  C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\pk_keys.h(256): note: Siehe Deklaration von "std::unique_ptr<Botan::PK_Ops::Signature,std::default_delete<_Ty>>"
+          with
+          [
+              _Ty=Botan::PK_Ops::Signature
+          ]
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\pubkey.h(410): warning C4251: "Botan::PK_Verifier::m_op": class "std::unique_ptr<Botan::PK_Ops::Verification,std::default_delete<_Ty>>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::PK_Verifier" verwendet wird
+          with
+          [
+              _Ty=Botan::PK_Ops::Verification
+          ]
+  C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\pk_keys.h(163): note: Siehe Deklaration von "std::unique_ptr<Botan::PK_Ops::Verification,std::default_delete<_Ty>>"
+          with
+          [
+              _Ty=Botan::PK_Ops::Verification
+          ]
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\pubkey.h(527): warning C4251: "Botan::PK_Key_Agreement::m_op": class "std::unique_ptr<Botan::PK_Ops::Key_Agreement,std::default_delete<_Ty>>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::PK_Key_Agreement" verwendet wird
+          with
+          [
+              _Ty=Botan::PK_Ops::Key_Agreement
+          ]
+  C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\pk_keys.h(273): note: Siehe Deklaration von "std::unique_ptr<Botan::PK_Ops::Key_Agreement,std::default_delete<_Ty>>"
+          with
+          [
+              _Ty=Botan::PK_Ops::Key_Agreement
+          ]
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\pubkey.h(578): warning C4251: "Botan::PK_Encryptor_EME::m_op": class "std::unique_ptr<Botan::PK_Ops::Encryption,std::default_delete<_Ty>>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::PK_Encryptor_EME" verwendet wird
+          with
+          [
+              _Ty=Botan::PK_Ops::Encryption
+          ]
+  C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\pk_keys.h(133): note: Siehe Deklaration von "std::unique_ptr<Botan::PK_Ops::Encryption,std::default_delete<_Ty>>"
+          with
+          [
+              _Ty=Botan::PK_Ops::Encryption
+          ]
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\pubkey.h(623): warning C4251: "Botan::PK_Decryptor_EME::m_op": class "std::unique_ptr<Botan::PK_Ops::Decryption,std::default_delete<_Ty>>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::PK_Decryptor_EME" verwendet wird
+          with
+          [
+              _Ty=Botan::PK_Ops::Decryption
+          ]
+  C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\pk_keys.h(222): note: Siehe Deklaration von "std::unique_ptr<Botan::PK_Ops::Decryption,std::default_delete<_Ty>>"
+          with
+          [
+              _Ty=Botan::PK_Ops::Decryption
+          ]
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\pubkey.h(717): warning C4251: "Botan::PK_KEM_Encryptor::m_op": class "std::unique_ptr<Botan::PK_Ops::KEM_Encryption,std::default_delete<_Ty>>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::PK_KEM_Encryptor" verwendet wird
+          with
+          [
+              _Ty=Botan::PK_Ops::KEM_Encryption
+          ]
+  C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\pk_keys.h(150): note: Siehe Deklaration von "std::unique_ptr<Botan::PK_Ops::KEM_Encryption,std::default_delete<_Ty>>"
+          with
+          [
+              _Ty=Botan::PK_Ops::KEM_Encryption
+          ]
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\pubkey.h(800): warning C4251: "Botan::PK_KEM_Decryptor::m_op": class "std::unique_ptr<Botan::PK_Ops::KEM_Decryption,std::default_delete<_Ty>>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::PK_KEM_Decryptor" verwendet wird
+          with
+          [
+              _Ty=Botan::PK_Ops::KEM_Decryption
+          ]
+  C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\pk_keys.h(239): note: Siehe Deklaration von "std::unique_ptr<Botan::PK_Ops::KEM_Decryption,std::default_delete<_Ty>>"
+          with
+          [
+              _Ty=Botan::PK_Ops::KEM_Decryption
+          ]
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\tls_callbacks.h(438): warning C4251: "Botan::TLS::Compat_Callbacks::m_output_function": class "std::function<void (const uint8_t *,size_t)>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::TLS::Compat_Callbacks" verwendet wird
+  C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\tls_callbacks.h(335): note: Siehe Deklaration von "std::function<void (const uint8_t *,size_t)>"
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\tls_callbacks.h(439): warning C4251: "Botan::TLS::Compat_Callbacks::m_app_data_cb": class "std::function<void (const uint8_t *,size_t)>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::TLS::Compat_Callbacks" verwendet wird
+  C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\tls_callbacks.h(335): note: Siehe Deklaration von "std::function<void (const uint8_t *,size_t)>"
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\tls_callbacks.h(440): warning C4251: "Botan::TLS::Compat_Callbacks::m_alert_cb": class "std::function<void (Botan::TLS::Alert)>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::TLS::Compat_Callbacks" verwendet wird
+  C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\tls_callbacks.h(365): note: Siehe Deklaration von "std::function<void (Botan::TLS::Alert)>"
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\tls_callbacks.h(441): warning C4251: "Botan::TLS::Compat_Callbacks::m_hs_cb": class "std::function<bool (const Botan::TLS::Session &)>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::TLS::Compat_Callbacks" verwendet wird
+  C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\tls_callbacks.h(338): note: Siehe Deklaration von "std::function<bool (const Botan::TLS::Session &)>"
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\tls_callbacks.h(442): warning C4251: "Botan::TLS::Compat_Callbacks::m_hs_msg_cb": class "std::function<void (const Botan::TLS::Handshake_Message &)>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::TLS::Compat_Callbacks" verwendet wird
+  C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\tls_callbacks.h(339): note: Siehe Deklaration von "std::function<void (const Botan::TLS::Handshake_Message &)>"
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\tls_callbacks.h(443): warning C4251: "Botan::TLS::Compat_Callbacks::m_next_proto": class "std::function<std::string (std::vector<std::string,std::allocator<_Ty>>)>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::TLS::Compat_Callbacks" verwendet wird
+          with
+          [
+              _Ty=std::string
+          ]
+  C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\tls_callbacks.h(340): note: Siehe Deklaration von "std::function<std::string (std::vector<std::string,std::allocator<_Ty>>)>"
+          with
+          [
+              _Ty=std::string
+          ]
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\tls_channel.h(282): warning C4251: "Botan::TLS::Channel::m_compat_callbacks": class "std::unique_ptr<Botan::TLS::Compat_Callbacks,std::default_delete<_Ty>>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::TLS::Channel" verwendet wird
+          with
+          [
+              _Ty=Botan::TLS::Compat_Callbacks
+          ]
+  C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\tls_channel.h(282): note: Siehe Deklaration von "std::unique_ptr<Botan::TLS::Compat_Callbacks,std::default_delete<_Ty>>"
+          with
+          [
+              _Ty=Botan::TLS::Compat_Callbacks
+          ]
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\tls_channel.h(291): warning C4251: "Botan::TLS::Channel::m_sequence_numbers": class "std::unique_ptr<Botan::TLS::Connection_Sequence_Numbers,std::default_delete<_Ty>>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::TLS::Channel" verwendet wird
+          with
+          [
+              _Ty=Botan::TLS::Connection_Sequence_Numbers
+          ]
+  C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\tls_channel.h(291): note: Siehe Deklaration von "std::unique_ptr<Botan::TLS::Connection_Sequence_Numbers,std::default_delete<_Ty>>"
+          with
+          [
+              _Ty=Botan::TLS::Connection_Sequence_Numbers
+          ]
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\tls_channel.h(294): warning C4251: "Botan::TLS::Channel::m_active_state": class "std::unique_ptr<Botan::TLS::Handshake_State,std::default_delete<_Ty>>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::TLS::Channel" verwendet wird
+          with
+          [
+              _Ty=Botan::TLS::Handshake_State
+          ]
+  C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\tls_channel.h(294): note: Siehe Deklaration von "std::unique_ptr<Botan::TLS::Handshake_State,std::default_delete<_Ty>>"
+          with
+          [
+              _Ty=Botan::TLS::Handshake_State
+          ]
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\tls_channel.h(295): warning C4251: "Botan::TLS::Channel::m_pending_state": class "std::unique_ptr<Botan::TLS::Handshake_State,std::default_delete<_Ty>>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::TLS::Channel" verwendet wird
+          with
+          [
+              _Ty=Botan::TLS::Handshake_State
+          ]
+  C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\tls_channel.h(294): note: Siehe Deklaration von "std::unique_ptr<Botan::TLS::Handshake_State,std::default_delete<_Ty>>"
+          with
+          [
+              _Ty=Botan::TLS::Handshake_State
+          ]
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\tls_channel.h(298): warning C4251: "Botan::TLS::Channel::m_write_cipher_states": class "std::map<uint16_t,std::shared_ptr<Botan::TLS::Connection_Cipher_State>,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::TLS::Channel" verwendet wird
+          with
+          [
+              _Kty=uint16_t,
+              _Ty=std::shared_ptr<Botan::TLS::Connection_Cipher_State>
+          ]
+  C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\tls_channel.h(298): note: Siehe Deklaration von "std::map<uint16_t,std::shared_ptr<Botan::TLS::Connection_Cipher_State>,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>"
+          with
+          [
+              _Kty=uint16_t,
+              _Ty=std::shared_ptr<Botan::TLS::Connection_Cipher_State>
+          ]
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\tls_channel.h(299): warning C4251: "Botan::TLS::Channel::m_read_cipher_states": class "std::map<uint16_t,std::shared_ptr<Botan::TLS::Connection_Cipher_State>,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::TLS::Channel" verwendet wird
+          with
+          [
+              _Kty=uint16_t,
+              _Ty=std::shared_ptr<Botan::TLS::Connection_Cipher_State>
+          ]
+  C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\tls_channel.h(298): note: Siehe Deklaration von "std::map<uint16_t,std::shared_ptr<Botan::TLS::Connection_Cipher_State>,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>"
+          with
+          [
+              _Kty=uint16_t,
+              _Ty=std::shared_ptr<Botan::TLS::Connection_Cipher_State>
+          ]
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\tls_channel.h(302): warning C4251: "Botan::TLS::Channel::m_writebuf": class "std::vector<uint8_t,Botan::secure_allocator<uint8_t>>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::TLS::Channel" verwendet wird
+  C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\secmem.h(65): note: Siehe Deklaration von "std::vector<uint8_t,Botan::secure_allocator<uint8_t>>"
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\tls_channel.h(303): warning C4251: "Botan::TLS::Channel::m_readbuf": class "std::vector<uint8_t,Botan::secure_allocator<uint8_t>>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::TLS::Channel" verwendet wird
+  C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\secmem.h(65): note: Siehe Deklaration von "std::vector<uint8_t,Botan::secure_allocator<uint8_t>>"
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\tls_policy.h(574): warning C4251: "Botan::TLS::Text_Policy::m_kv": class "std::map<std::string,std::string,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::TLS::Text_Policy" verwendet wird
+          with
+          [
+              _Kty=std::string,
+              _Ty=std::string
+          ]
+  C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\tls_policy.h(574): note: Siehe Deklaration von "std::map<std::string,std::string,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>"
+          with
+          [
+              _Kty=std::string,
+              _Ty=std::string
+          ]
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\asn1_str.h(48): warning C4251: "Botan::ASN1_String::m_data": class "std::vector<uint8_t,std::allocator<_Ty>>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::ASN1_String" verwendet wird
+          with
+          [
+              _Ty=uint8_t
+          ]
+  C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\asn1_obj.h(85): note: Siehe Deklaration von "std::vector<uint8_t,std::allocator<_Ty>>"
+          with
+          [
+              _Ty=uint8_t
+          ]
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\asn1_str.h(49): warning C4251: "Botan::ASN1_String::m_utf8_str": class "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::ASN1_String" verwendet wird
+  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\xstring(4167): note: Siehe Deklaration von "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\x509_dn.h(84): warning C4251: "Botan::X509_DN::m_rdn": class "std::vector<std::pair<Botan::OID,Botan::ASN1_String>,std::allocator<_Ty>>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::X509_DN" verwendet wird
+          with
+          [
+              _Ty=std::pair<Botan::OID,Botan::ASN1_String>
+          ]
+  C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\x509_dn.h(54): note: Siehe Deklaration von "std::vector<std::pair<Botan::OID,Botan::ASN1_String>,std::allocator<_Ty>>"
+          with
+          [
+              _Ty=std::pair<Botan::OID,Botan::ASN1_String>
+          ]
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\x509_dn.h(85): warning C4251: "Botan::X509_DN::m_dn_bits": class "std::vector<uint8_t,std::allocator<_Ty>>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::X509_DN" verwendet wird
+          with
+          [
+              _Ty=uint8_t
+          ]
+  C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\asn1_obj.h(85): note: Siehe Deklaration von "std::vector<uint8_t,std::allocator<_Ty>>"
+          with
+          [
+              _Ty=uint8_t
+          ]
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\crl_ent.h(90): warning C4251: "Botan::CRL_Entry::m_data": class "std::shared_ptr<Botan::CRL_Entry_Data>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::CRL_Entry" verwendet wird
+  C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\crl_ent.h(90): note: Siehe Deklaration von "std::shared_ptr<Botan::CRL_Entry_Data>"
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\x509_crl.h(139): warning C4251: "Botan::X509_CRL::m_data": class "std::shared_ptr<Botan::CRL_Data>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::X509_CRL" verwendet wird
+  C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\x509_crl.h(139): note: Siehe Deklaration von "std::shared_ptr<Botan::CRL_Data>"
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\certstor.h(157): warning C4251: "Botan::Certificate_Store_In_Memory::m_certs": class "std::vector<std::shared_ptr<const Botan::X509_Certificate>,std::allocator<_Ty>>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::Certificate_Store_In_Memory" verwendet wird
+          with
+          [
+              _Ty=std::shared_ptr<const Botan::X509_Certificate>
+          ]
+  C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\certstor.h(37): note: Siehe Deklaration von "std::vector<std::shared_ptr<const Botan::X509_Certificate>,std::allocator<_Ty>>"
+          with
+          [
+              _Ty=std::shared_ptr<const Botan::X509_Certificate>
+          ]
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\certstor.h(158): warning C4251: "Botan::Certificate_Store_In_Memory::m_crls": class "std::vector<std::shared_ptr<const Botan::X509_CRL>,std::allocator<_Ty>>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::Certificate_Store_In_Memory" verwendet wird
+          with
+          [
+              _Ty=std::shared_ptr<const Botan::X509_CRL>
+          ]
+  C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\certstor.h(158): note: Siehe Deklaration von "std::vector<std::shared_ptr<const Botan::X509_CRL>,std::allocator<_Ty>>"
+          with
+          [
+              _Ty=std::shared_ptr<const Botan::X509_CRL>
+          ]
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\tls_client.h(161): warning C4251: "Botan::TLS::Client::m_application_protocol": class "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::TLS::Client" verwendet wird
+  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\xstring(4167): note: Siehe Deklaration von "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\tls_server.h(157): warning C4251: "Botan::TLS::Server::m_next_protocol": class "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::TLS::Server" verwendet wird
+  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\xstring(4167): note: Siehe Deklaration von "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\tls_server.h(160): warning C4251: "Botan::TLS::Server::m_choose_next_protocol": class "std::function<std::string (std::vector<std::string,std::allocator<_Ty>>)>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::TLS::Server" verwendet wird
+          with
+          [
+              _Ty=std::string
+          ]
+  C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\tls_callbacks.h(340): note: Siehe Deklaration von "std::function<std::string (std::vector<std::string,std::allocator<_Ty>>)>"
+          with
+          [
+              _Ty=std::string
+          ]
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\auto_rng.h(97): warning C4251: "Botan::AutoSeeded_RNG::m_rng": class "std::unique_ptr<Botan::Stateful_RNG,std::default_delete<_Ty>>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::AutoSeeded_RNG" verwendet wird
+          with
+          [
+              _Ty=Botan::Stateful_RNG
+          ]
+  C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\auto_rng.h(97): note: Siehe Deklaration von "std::unique_ptr<Botan::Stateful_RNG,std::default_delete<_Ty>>"
+          with
+          [
+              _Ty=Botan::Stateful_RNG
+          ]
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\data_src.h(136): warning C4251: "Botan::DataSource_Memory::m_source": class "std::vector<uint8_t,Botan::secure_allocator<uint8_t>>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::DataSource_Memory" verwendet wird
+  C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\secmem.h(65): note: Siehe Deklaration von "std::vector<uint8_t,Botan::secure_allocator<uint8_t>>"
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\data_src.h(172): warning C4251: "Botan::DataSource_Stream::m_identifier": class "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::DataSource_Stream" verwendet wird
+  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include\xstring(4167): note: Siehe Deklaration von "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\data_src.h(174): warning C4251: "Botan::DataSource_Stream::m_source_memory": class "std::unique_ptr<std::istream,std::default_delete<_Ty>>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::DataSource_Stream" verwendet wird
+          with
+          [
+              _Ty=std::istream
+          ]
+  C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\data_src.h(174): note: Siehe Deklaration von "std::unique_ptr<std::istream,std::default_delete<_Ty>>"
+          with
+          [
+              _Ty=std::istream
+          ]
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\asn1_alt_name.h(54): warning C4251: "Botan::AlternativeName::m_alt_info": class "std::multimap<std::string,std::string,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::AlternativeName" verwendet wird
+          with
+          [
+              _Kty=std::string,
+              _Ty=std::string
+          ]
+  C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\x509_dn.h(35): note: Siehe Deklaration von "std::multimap<std::string,std::string,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>"
+          with
+          [
+              _Kty=std::string,
+              _Ty=std::string
+          ]
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\asn1_alt_name.h(55): warning C4251: "Botan::AlternativeName::m_othernames": class "std::multimap<Botan::OID,Botan::ASN1_String,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::AlternativeName" verwendet wird
+          with
+          [
+              _Kty=Botan::OID,
+              _Ty=Botan::ASN1_String
+          ]
+  C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\asn1_alt_name.h(42): note: Siehe Deklaration von "std::multimap<Botan::OID,Botan::ASN1_String,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>"
+          with
+          [
+              _Kty=Botan::OID,
+              _Ty=Botan::ASN1_String
+          ]
+C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\datastor.h(56): warning C4251: "Botan::Data_Store::m_contents": class "std::multimap<std::string,std::string,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>" erfordert eine DLL-Schnittstelle, die von Clients von class "Botan::Data_Store" verwendet wird
+          with
+          [
+              _Kty=std::string,
+              _Ty=std::string
+          ]
+  C:\Users\User\source\repos\BotanDTLS\BotanDTLS\include\botan\x509_dn.h(35): note: Siehe Deklaration von "std::multimap<std::string,std::string,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>"
+          with
+          [
+              _Kty=std::string,
+              _Ty=std::string
+          ]
+C:\Users\User\source\repos\PocoDTLS_Botan\PocoDTLS_Botan\Server.cpp(10): warning C4267: "Argument": Konvertierung von "size_t" nach "int", Datenverlust möglich
+  Code wird generiert.
+  6 of 311 functions ( 1.9%) were compiled, the rest were copied from previous compilation.
+    4 functions were new in current compilation
+    4 functions had inline decision re-evaluated but remain unchanged
+  Codegenerierung ist abgeschlossen.
+  PocoDTLS_Botan.vcxproj -> C:\Users\User\source\repos\PocoDTLS_Botan\x64\Release\PocoDTLS_Botan.exe
