@@ -40,10 +40,10 @@ namespace DTLS {
 		~Policy() = default;
 
 		//overridden Functions
-		bool allow_dtls10() const override {
+		bool allow_dtls10() const noexcept override {
 			return this->dtls10_enabled;
 		}
-		bool allow_dtls12() const override {
+		bool allow_dtls12() const noexcept override {
 			return this->dtls12_enabled;
 		}
 
@@ -67,19 +67,21 @@ namespace DTLS {
 			return this->allowedSignatureMethodsVec;
 		}
 
-		bool allow_tls10() const override {
+		bool allow_tls10() const noexcept override {
 			return false;
 		}
 
-		bool allow_tls11() const override {
+		bool allow_tls11() const noexcept override {
 			return false;
 		}
 
-		bool allow_tls12() const override {
+		bool allow_tls12() const noexcept override {
 			return false;
 		}
 
 		bool removeItemAllowedOption(DTLSAllowedOption option, const std::string& key);
+
+		bool overrideAllowedOption(DTLSAllowedOption option, std::vector<std::string>& vector);
 
 		
 

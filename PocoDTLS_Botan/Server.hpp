@@ -24,15 +24,26 @@
 #include<Poco/Net/SocketAddress.h>
 
 #include<iostream>
+#include<any>
 
 namespace DTLS {
+
+	enum class DTLSCallback {
+		DTLS_RECORD_RECEIVED_CALLBACK = 1,
+		DTLS_ON_ERROR_CALLBACK = 2,
+	};
+
+	using DTLSReplyCallback = std::function<void(const std::string&)>;
+	using DTLSReceivedCallback = std::function<void(const std::string&, DTLSReplyCallback& reply)>;
+	using DTLSErrorCallback = std::function<void(const std::string&)>;
+
 	class Server : public Botan::TLS::Callbacks, public Poco::Net::DatagramSocket
 	{
 	public:
 		Server(Poco::Net::SocketAddress sa, Botan::Credentials_Manager* mgr, Botan::TLS::Policy* pol);
 		~Server() = default;
 
-
+		void setupCallback(DTLSCallback type, std::any foo);
 		//overridden functions
 		void tls_emit_data(const uint8_t data[], size_t size) override;
 		void tls_record_received(uint64_t seq_no, const uint8_t data[], size_t size) override;
@@ -42,6 +53,7 @@ namespace DTLS {
 		//MAIN FUNCTION FOR CLASS
 		void startListening();
 
+
 	private:
 		Poco::Net::SocketAddress clientAddr;
 		Botan::AutoSeeded_RNG rng;
@@ -50,6 +62,11 @@ namespace DTLS {
 		Botan::TLS::Policy* policy;
 		std::unique_ptr<Botan::TLS::Server> server;
 		bool condition = true;
+
+		//Events
+		DTLSReceivedCallback DataReceivedEvent;
+		DTLSErrorCallback OnErrorEvent;
+		DTLSReplyCallback replyFunction;
 	};
 
 }

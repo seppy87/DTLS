@@ -12,6 +12,7 @@
 #include<botan/datastor.h>
 #include<botan/certstor.h>
 #include<botan/symkey.h>
+#include<iostream>
 
 namespace DTLS {
 	class ServerCredentials : public Botan::Credentials_Manager
@@ -22,10 +23,20 @@ namespace DTLS {
 
 		//overrridden functions
 		std::vector<Botan::X509_Certificate> cert_chain(const std::vector<std::string>& cert_key_types, const std::string& type, const std::string& context) override {
-			return this->certChain;
+			std::cout << "Type=" << type << '\n';
+			std::cout << "Context=" << context << '\n';
+			for (auto s : cert_key_types) {
+				std::cout << "Key Type=" << s << '\n';
+				if (s == "RSA")
+					return this->certChain;
+			}
+			//std::cout << "My Cert = " << certChain[0].to_string();
+			//return this->certChain;
+			return std::vector<Botan::X509_Certificate>();
 		}
 
-		Botan::Private_Key* private_key_for(const Botan::X509_Certificate& cert, const std::string& type, const std::string& context) override {
+		Botan::Private_Key* private_key_for(const Botan::X509_Certificate& cert, const std::string& type, const std::string& context) noexcept override {
+			std::cout << "Type=" << type << '\n';
 			return this->m_key.get();
 		}
 

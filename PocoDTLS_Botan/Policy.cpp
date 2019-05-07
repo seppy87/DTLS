@@ -80,3 +80,28 @@ bool DTLS::Policy::removeItemAllowedOption(DTLSAllowedOption option, const std::
 	}
 	//return false;
 }
+
+bool DTLS::Policy::overrideAllowedOption(DTLSAllowedOption option, std::vector<std::string>& vector)
+{
+	switch (option) {
+	case DTLSAllowedOption::DTLS_ALLOWED_CIPHERS:
+		this->allowedCiphersVec = std::move(vector);
+		return true;
+	case DTLSAllowedOption::DTLS_ALLOWED_KEY_EXCHANGE_METHODS:
+		this->allowedKeyExchangeMethodsVec = std::move(vector);
+		return true;
+	case DTLSAllowedOption::DTLS_ALLOWED_MACS:
+		this->allowedMacsVec = std::move(vector);
+		return true;
+	case DTLSAllowedOption::DTLS_ALLOWED_SIGNATURE_HASHES:
+		this->allowedSignatureHashesVec = std::move(vector);
+		return true;
+	case DTLSAllowedOption::DTLS_ALLOWED_SIGNATURE_METHODS:
+		this->allowedSignatureMethodsVec = std::move(vector);
+		return true;
+	default:
+		std::cerr << "This should not happen. overrideAllowedOption\n";
+		return false;
+	}
+	return false;
+}
