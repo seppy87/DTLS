@@ -56,9 +56,10 @@ bool DTLS::Server::tls_session_established(const Botan::TLS::Session& session)
 
 void DTLS::Server::startListening()
 {
+	uint8_t buffer[4096];
+	memset(buffer, 0, sizeof(buffer));
 	while (condition) {
-		uint8_t buffer[4096];
-		memset(buffer, 0, sizeof(buffer));
+		
 		auto bytes = this->receiveFrom(buffer, sizeof(buffer), this->clientAddr);
 		try {
 			this->server->received_data(buffer, bytes);

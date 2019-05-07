@@ -35,9 +35,17 @@ namespace DTLS {
 			return std::vector<Botan::X509_Certificate>();
 		}
 
+		Botan::SymmetricKey psk(const std::string& type, const std::string& context, const std::string& identity) override {
+			return Botan::OctetString();
+		}
+
 		Botan::Private_Key* private_key_for(const Botan::X509_Certificate& cert, const std::string& type, const std::string& context) noexcept override {
 			std::cout << "Type=" << type << '\n';
 			return this->m_key.get();
+		}
+
+		std::vector<Botan::Certificate_Store*> trusted_certificate_authorities(const std::string& type, const std::string& context) override {
+			return std::vector<Botan::Certificate_Store*>();
 		}
 
 	private:

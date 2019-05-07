@@ -138,11 +138,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Client.hpp" />
     <ClInclude Include="Policy.hpp" />
     <ClInclude Include="Server.hpp" />
     <ClInclude Include="ServerCredentials.hpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Client.cpp" />
     <ClCompile Include="Policy.cpp" />
     <ClCompile Include="Quelle.cpp" />
     <ClCompile Include="Server.cpp" />

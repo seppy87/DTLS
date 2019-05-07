@@ -49,9 +49,22 @@ namespace DTLS {
 		void tls_record_received(uint64_t seq_no, const uint8_t data[], size_t size) override;
 		void tls_alert(Botan::TLS::Alert alert) override;
 		bool tls_session_established(const Botan::TLS::Session& session) override;
+		/*void tls_verify_cert_chain(const std::vector<Botan::X509_Certificate>& cert_chain,
+			const std::vector<std::shared_ptr<Botan::OCSP::Response>>& ocsp_responses,
+			const std::vector<Botan::Certificate_Store*>& trusted_roots,
+			Botan::Usage_Type usage,
+			const std::string& hostname,
+			const Botan::TLS::Policy& policy
+		) {
+
+		}*/
 
 		//MAIN FUNCTION FOR CLASS
 		void startListening();
+
+		void stopServer() {
+			this->condition = false;
+		}
 
 
 	private:

@@ -11,7 +11,7 @@ int main() {
 	
 	try {
 		DTLS::Policy policy;
-		DTLS::ServerCredentials cred("c:\\CATEST\\botan\\private.key", "c:\\CATEST\\botan\\botan.cert");
+		DTLS::ServerCredentials cred("c:\\CATEST\\botan\\private.key", "c:\\CATEST\\botan\\botanserver.crt");
 		DTLS::Server server(Poco::Net::SocketAddress("192.168.1.119", 999), &cred, &policy);
 		server.startListening();
 	}
