@@ -6,7 +6,10 @@
 #include"ClientCredentials.h"
 
 
-
+void received(const std::string& data, DTLS::DTLSReplyCallback& reply) {
+	std::cout << data << '\n';
+	reply("ACK");
+}
 
 int main(int argc, char **argv) {
 	Poco::Net::initializeNetwork();
@@ -15,6 +18,7 @@ int main(int argc, char **argv) {
 			DTLS::Policy policy;
 			DTLS::ServerCredentials cred("c:\\CATEST\\botan\\private.key", "c:\\CATEST\\botan\\botanserver.crt");
 			DTLS::Server server(Poco::Net::SocketAddress("192.168.1.119", 999), &cred, &policy);
+			server.setupCallback(DTLS::DTLSCallback::DTLS_RECORD_RECEIVED_CALLBACK, std::make_any<DTLS::DTLSReceivedCallback>(&received));
 			server.startListening();
 		}
 		catch (const Botan::Exception & ex) {

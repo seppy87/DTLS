@@ -93,8 +93,8 @@ namespace DTLS {
 		std::vector<std::string> allowedCiphersVec{ "AES-256/OCB(12)","AES-128/OCB(12)","ChaCha20Poly1305","AES-256/GCM","AES-128/GCM","AES-256/CCM","AES-128/CCM","AES-256/CCM(8)","AES-128/CCM(8)","Camellia-256/GCM","Camellia-128/GCM","ARIA-256/GCM", "ARIA-128/GCM", "AES-256", "AES-128","Camellia-256", "Camellia-128", "SEED","3DES" };;
 		std::vector<std::string> allowedSignatureHashesVec{ "SHA-512","SHA-384","SHA-256","SHA-1", };
 		std::vector<std::string> allowedMacsVec{ "AEAD","SHA-256","SHA-384","SHA-1" };
-		std::vector<std::string> allowedKeyExchangeMethodsVec{ "SRP_SHA", "ECDHE_PSK", "DHE_PSK", "PSK", "CECPQ1", "ECDH", "DH", "RSA" };
-		std::vector<std::string> allowedSignatureMethodsVec{ "ECDSA","RSA","DSA","IMPLICIT","ANONYMOUS" };
+		std::vector<std::string> allowedKeyExchangeMethodsVec{ "SRP_SHA", "CECPQ1", "ECDH", "DH", "RSA" };
+		std::vector<std::string> allowedSignatureMethodsVec{ "ECDSA","RSA","DSA"};
 	};
 }
 

@@ -31,8 +31,8 @@ void DTLS::Server::tls_emit_data(const uint8_t data[], size_t size)
 void DTLS::Server::tls_record_received(uint64_t seq_no, const uint8_t data[], size_t size)
 {
 	std::cout << "DATA RECEIVED\n";
-	std::cout << data << '\n';
-	this->server->send("ACK");
+	//std::cout << data << '\n';
+	//this->server->send("ACK");
 	if (this->DataReceivedEvent) {
 		std::string t = "";
 		for (unsigned int i = 0; i < size; i++) {

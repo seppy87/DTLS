@@ -50,6 +50,7 @@ namespace DTLS {
 			return c;
 		}
 
+
 	private:
 		Botan::Certificate_Store_In_Memory certstore;
 		std::unique_ptr<Botan::Private_Key> m_key;
