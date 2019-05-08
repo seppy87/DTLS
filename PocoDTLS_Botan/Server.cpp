@@ -1,6 +1,6 @@
 #include "Server.hpp"
 
-DTLS::Server::Server(Poco::Net::SocketAddress sa, Botan::Credentials_Manager* mgr, Botan::TLS::Policy* pol) : Poco::Net::DatagramSocket(sa), session_mgr(rng), creds(mgr), policy(pol)
+DTLS::Server::Server(Poco::Net::SocketAddress sa, Botan::Credentials_Manager* mgr, Botan::TLS::Policy* pol) : Poco::Net::DatagramSocket(sa,true), session_mgr(rng), creds(mgr), policy(pol)
 {
 	this->server = std::make_unique<Botan::TLS::Server>(*this, this->session_mgr, *this->creds, *this->policy, this->rng, true);
 	this->replyFunction = [&](const std::string & message) {
@@ -30,7 +30,9 @@ void DTLS::Server::tls_emit_data(const uint8_t data[], size_t size)
 
 void DTLS::Server::tls_record_received(uint64_t seq_no, const uint8_t data[], size_t size)
 {
+	std::cout << "DATA RECEIVED\n";
 	std::cout << data << '\n';
+	this->server->send("ACK");
 	if (this->DataReceivedEvent) {
 		std::string t = "";
 		for (unsigned int i = 0; i < size; i++) {
@@ -59,14 +61,20 @@ void DTLS::Server::startListening()
 	uint8_t buffer[4096];
 	memset(buffer, 0, sizeof(buffer));
 	while (condition) {
-		
-		auto bytes = this->receiveFrom(buffer, sizeof(buffer), this->clientAddr);
 		try {
-			this->server->received_data(buffer, bytes);
+			auto bytes = this->receiveFrom(buffer, sizeof(buffer), this->clientAddr);
+			std::cout << "FROM PORT=" << this->clientAddr.port() << '\n';
+			try {
+				this->server->received_data(buffer, bytes);
+				this->sendTo("ACK", sizeof("ACK"), this->clientAddr);
+			}
+			catch (Botan::Exception & ex) {
+				std::cout << ex.what() << '\n';
+			}
 		}
-		catch (Botan::Exception & ex) {
-			std::cout << ex.what() << '\n';
+		catch (Poco::Exception & ex) {
+			std::cout << ex.displayText();
 		}
-		this->server->send("ACK");
+		
 	}
 }

@@ -13,7 +13,7 @@ namespace DTLS {
 
 		//overridden Functions
 		void tls_emit_data(const uint8_t data[], size_t size) override {
-			this->sendBytes(data, size,0);
+			this->sendTo(data, size,this->target);
 		}
 
 		void tls_record_received(uint64_t seq_no, const uint8_t data[], size_t size) override;
@@ -22,6 +22,15 @@ namespace DTLS {
 			std::cerr << alert.type_string()<<'\n';
 			if (this->OnErrorEvent)
 				this->OnErrorEvent(alert.type_string());
+		}
+
+		bool tls_session_established(const Botan::TLS::Session& session) override
+		{
+			std::cout << "SESSION ESTABLISHED\n";
+			// the session with the tls server was established
+			// return false to prevent the session from being cached, true to
+			// cache the session in the configured session manager
+			return false;
 		}
 
 	private:
@@ -37,6 +46,7 @@ namespace DTLS {
 		DTLSErrorCallback OnErrorEvent;
 
 	public:
+		Client& operator<<(const std::string& str);
 		friend std::ostream& operator<<(std::ostream& os, const DTLS::Client& cl);
 		friend std::istream& operator>>(std::istream& is, DTLS::Client& cl);
 			

@@ -45,10 +45,13 @@ namespace DTLS {
 		}
 
 		std::vector<Botan::Certificate_Store*> trusted_certificate_authorities(const std::string& type, const std::string& context) override {
-			return std::vector<Botan::Certificate_Store*>();
+			std::vector<Botan::Certificate_Store*> c;
+			c.insert(c.end(), &this->certstore);
+			return c;
 		}
 
 	private:
+		Botan::Certificate_Store_In_Memory certstore;
 		std::unique_ptr<Botan::Private_Key> m_key;
 		std::vector<Botan::X509_Certificate> certChain;
 	};
