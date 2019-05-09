@@ -4,6 +4,19 @@ DTLS::Client::Client(Poco::Net::SocketAddress connectTo, Botan::Credentials_Mana
 {
 	//this->connect(connectTo);
 	this->client = std::make_unique<Botan::TLS::Client>(*this, this->mgr, credentials, policy, rng,Botan::TLS::Server_Information(connectTo.host().toString(),connectTo.port()), Botan::TLS::Protocol_Version::DTLS_V12);
+	
+}
+
+void DTLS::Client::DTLSConnect()
+{
+	uint8_t buffer[4096];
+	memset(buffer, 0, sizeof(buffer));
+	int bytes = 0;
+	do {
+		//this->client->send("HALLO");
+		bytes = this->receiveBytes(buffer, sizeof(buffer));
+		this->client->received_data(buffer, bytes);
+	} while (bytes > 0);
 }
 
 void DTLS::Client::tls_record_received(uint64_t seq_no, const uint8_t data[], size_t size)

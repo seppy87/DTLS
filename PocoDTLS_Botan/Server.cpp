@@ -4,7 +4,8 @@ DTLS::Server::Server(Poco::Net::SocketAddress sa, Botan::Credentials_Manager* mg
 {
 	this->server = std::make_unique<Botan::TLS::Server>(*this, this->session_mgr, *this->creds, *this->policy, this->rng, true);
 	this->replyFunction = [&](const std::string & message) {
-		this->sendTo(message.c_str(), message.size(), this->clientAddr);
+		//this->sendTo(message.c_str(), message.size(), this->clientAddr);
+		this->server->send(message);
 	};
 }
 
@@ -31,8 +32,7 @@ void DTLS::Server::tls_emit_data(const uint8_t data[], size_t size)
 void DTLS::Server::tls_record_received(uint64_t seq_no, const uint8_t data[], size_t size)
 {
 	std::cout << "DATA RECEIVED\n";
-	//std::cout << data << '\n';
-	//this->server->send("ACK");
+	
 	if (this->DataReceivedEvent) {
 		std::string t = "";
 		for (unsigned int i = 0; i < size; i++) {
@@ -74,6 +74,7 @@ void DTLS::Server::startListening()
 		}
 		catch (Poco::Exception & ex) {
 			std::cout << ex.displayText();
+			
 		}
 		
 	}

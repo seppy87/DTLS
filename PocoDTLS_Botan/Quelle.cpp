@@ -28,15 +28,14 @@ int main(int argc, char **argv) {
 	else {
 		DTLS::Policy policy;
 		DTLS::ClientCredentials creds;
-		creds.addCAs("c:\\rsakeys\\ca.crt");
+		creds.addCAs("c:\\rsakeys\\CAS\\ca.crt");
 		creds.addCertChain("c:\\rsakeys\\client.crt");
 		creds.addPrivateKey("c:\\rsakeys\\client.key");
 		try {
 			DTLS::Client client(Poco::Net::SocketAddress("192.168.1.119", 999), creds, policy);
-			std::string test("HALLO");
-			//client << "HALLO WELT";
+			client.DTLSConnect();
 			client << "HALLO";
-			std::cout << client;
+	//		std::cout << client;
 			
 		}
 		catch (Botan::Exception & ex) {

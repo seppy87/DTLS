@@ -35,16 +35,16 @@ void DTLS::ClientCredentials::addPrivateKey(const std::string& path)
 
 std::vector<Botan::X509_Certificate> DTLS::ClientCredentials::cert_chain(const std::vector<std::string>& cert_key_types, const std::string& type, const std::string& context)
 {
+	std::cout << this->certChain[0].to_string() << '\n';
 	for (auto keytype : cert_key_types) {
 		if(keytype=="RSA")
 			return this->certChain;
 	}
-	return {};
+	return std::vector<Botan::X509_Certificate>();
 }
 
 Botan::Private_Key* DTLS::ClientCredentials::private_key_for(const Botan::X509_Certificate& cert, const std::string& type, const std::string& context)
 {
-	if (this->m_key)
-		return this->m_key.get();
+	
 	return nullptr;
 }

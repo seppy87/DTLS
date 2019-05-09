@@ -11,6 +11,8 @@ namespace DTLS {
 		Client(Poco::Net::SocketAddress connectTo, Botan::Credentials_Manager& credentials, Botan::TLS::Policy& policy);
 		~Client() = default;
 
+		void DTLSConnect();
+
 		//overridden Functions
 		void tls_emit_data(const uint8_t data[], size_t size) override {
 			this->sendTo(data, size,this->target);
@@ -31,6 +33,14 @@ namespace DTLS {
 			// return false to prevent the session from being cached, true to
 			// cache the session in the configured session manager
 			return false;
+		}
+
+		bool isActive() {
+			return this->client->is_active();
+		}
+
+		bool isClosed() {
+			return this->client->is_closed();
 		}
 
 	private:
